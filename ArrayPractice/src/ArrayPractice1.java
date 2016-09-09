@@ -5,44 +5,62 @@ public class ArrayPractice1
 	static int counter = 0;
 		public static void main(String[] args)
 		{
-			exercise1();		
-	//		exercise2();
+		//	exercise1();		
+			exercise2();
 		}
 	public static int exercise1()
 	{
 		System.out.println("How many favorite sweets do you have?");
-		Scanner userInput2= new Scanner(System.in);
-		int number = userInput2.nextInt();	
-		
-		String[] sweetsList = new String[number];		
-			System.out.println("enter a sweet please:");
+		Scanner in = new Scanner(System.in);
+		int number = in.nextInt();
+		int a = -1;
+		System.out.println("What are they?");
+		for(int i=0; i<number; i++)
+		{
 			Scanner userInput= new Scanner(System.in);
-			String sweetName = userInput.nextLine();
-			sweetsList[number]= sweetName;
-			System.out.println(sweetName);
-		
-		for(String sweetName1:sweetsList)
+			String sweetName = userInput.nextLine();	
+			a++;
+			String [] sweets = new String [number];
+			sweets [a] =sweetName;
+			
+			if((a+1)==number)
 			{
-				sweetsList[number]= sweetName;
-				System.out.println(sweetsList);
+				System.out.println(sweetName);
 			}
+		}
 		return number;
 	}	
-	//public static int exercise2()
+	public static int exercise2()
 	{
-		System.out.println("Please input 8 numbers");
-		int[] myArray = new int[8];
-	
-		for(int[] myArray)
+		System.out.println("Please input 8 numbers.");
+		int a = -1;
+		System.out.println("What are they?");
+		int sum1 = 0;
+		int sum2 = 0;
+		for(int i=0; i<8; i++)
 		{
-			System.out.println("enter a number:");
 			Scanner userInput= new Scanner(System.in);
-			int numbers2 = userInput.nextInt();
-			myArray[8]=numbers2;
+			int number = userInput.nextInt();	
+			a++;
+			int [] myArray = new int [8];
+			myArray [a] =number;
+			
+			if(myArray[a]%2==1)
+			{
+				System.out.println("odd");
+				int oddSum = sum1+a;
+				System.out.println("Odd sum = "+oddSum+".");
+			}
+			else 
+			{
+				System.out.println("even");
+				int evenSum = sum2 +a;
+				System.out.println("Even sum = "+evenSum+".");
+			}
+			
 		}
-
-	{
+		return a;
 	}
 	}
-	}
+	
 
