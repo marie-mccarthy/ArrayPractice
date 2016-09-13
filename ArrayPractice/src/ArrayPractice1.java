@@ -36,8 +36,7 @@ public class ArrayPractice1
 	{
 		System.out.println(" ");
 		int a = -1;
-		System.out.println("Please input 8 numbers.");
-		
+		System.out.println("Please input 8 numbers.");		
 		int sumOdd = 0;
 		int sumEven = 0;
 		for(int i=0; i<8; i++)
@@ -50,18 +49,15 @@ public class ArrayPractice1
 			
 			if(myArray[a]%2==1)
 			{
-				System.out.println("odd");
-				sumOdd+=number;
-				System.out.println("Odd sum = "+sumOdd+".");
+				sumOdd+=number;				
 			}
 			else 
-			{
-				System.out.println("even");
-				sumEven+=number;
-				System.out.println("Even sum = "+sumEven+".");
-			}
-			
+			{				
+				sumEven+=number;				
+			}			
 		}
+		System.out.println("Odd sum = "+sumOdd+".");	
+		System.out.println("Even sum = "+sumEven+".");
 		return a;
 	}
 	
@@ -96,7 +92,7 @@ public class ArrayPractice1
 		 }
 		for(String n : digits)
 			{
-			System.out.println(n);
+			System.out.print(n);
 			}
 		return b;
 	}
